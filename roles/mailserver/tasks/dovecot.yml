@@ -1,4 +1,4 @@
-- name: Install Dovecot and related packages
+- name: Install Dovecot and related packages for distributions other than Ubuntu Trusty
   apt: pkg={{ item }} state=installed
   with_items:
     - dovecot-core

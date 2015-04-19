@@ -1,4 +1,4 @@
-- name: Install Postfix 9.1 and related packages
+- name: Install Postfix 9.1 and related packages for distributions other than Ubuntu Trusty
   apt: pkg={{ item }} state=installed
   with_items:
     - libsasl2-modules
